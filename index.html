@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="penguin.png" alt="penguin logo">
+      <h1>PENGUIN<br>MEDIA</h1>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <h3>Welcome to penguin media the chance to discover your inner penguin. See something you like? Just click and we'll do the rest for you. Sign-up now to get started<br> <br>
+        You <em>know</em> you want to</h3>
+    </section>
+    <form method="get" novalidate>
+      <div class="sign_up">
+        <h3>
+          Let's do this!
+        </h3>
+        <div class="forms">
+          <ul>
+            <li>
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" id="first_name" name="first-name" placeholder="Joe">
+            </li>
+            <li>
+              <label for="email_address">EMAIL</label>
+              <input type="email" id="email_address" name="email-address" placeholder="joebloggs@email.com">
+            </li>
+            <li>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" placeholder="***********">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label for="last_name">LAST NAME</label>
+              <input type="text" id="last_name" name="last-name" placeholder="Bloggs"></li>
+            <li>
+              <label for="phone_number">PHONE NUMBER</label>
+              <input type="tel" id="phone_number" name="phone-number" placeholder="01234 567890">
+            </li>
+            <li>
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm_password" name="confirm-password" placeholder="***********"></li>
+          </ul>
+          <ul class="errors"></ul>
+        </div>
+      </div>
+      <div class="submit">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="">LOG IN</a></p>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
